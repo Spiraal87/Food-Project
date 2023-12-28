@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FoodCoster</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div id="header" class="topnav">
+        <div class="logo">
+            <img src="food-logo.png" />
+        </div>
+        <a href="#" class="home">Home</a>
+        <a href="#" class="historystore" hidden>Search History</a>
+        <a href="#" class="logout" hidden>Log out</a>
+        <a href="#" class="searchnav" hidden>Back</a>
+        <a href="#" class="reset-link" hidden>Update user info</a>
+        <p></p>
+    </div>
+    <div id="content" class="content">
+        <div class="landing">
+            <h1>FoodCoster</h1>
+            <p>Know your food costs before you get to your destination.</p>
+            <div class="containerbtn">
+                <a class="btn btn-1">Sign up</a>
+                <a class="btn btn-2">Login</a>
+            </div>
+        </div>
+
+        <div class="signup hidden">
+            <div class="container">
+                <h3>Signup</h3>
+                <form class='signup-form' action='' method='post'>
+                    <label for="firstname">First name</label>
+                    <input type="text" class="js-query" id="firstName" placeholder="first name" required>
+                    <label for="lastname">Last name</label>
+                    <input type="text" class="js-query" id="lastName" placeholder="last name" required>
+                    <label for="username">Username</label>
+                    <input type="text" class="js-query" id="email" placeholder="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" class="js-query" value="" id="password" placeholder="password" required>
+                    <div class="boxchecked">
+                        <input type="checkbox" class="hidepassword" onclick="signupPassword()">
+                        <span class="passwordshow">Show Password</span>
+                    </div>
+                    <button type="submit" class="js-signup-btn">Signup</button>
+                </form>
+                <h4 class="loginlink">Already have an account?
+                    <span class="login-link">Login</span>
+                </h4>
+                <h4>Demo Account - Username: user / Password: user</h4>
+
+                <p></p>
+            </div>
+        </div>
+
+
+        <div class="reset hidden">
+            <div class="containerReset">
+                <h2>Update your info</h2>
+                <form class='reset-form' action='' method='get'>
+                    <label for="username">Username</label>
+                    <input type="username" class="js-query" value="" id="username" placeholder="username">
+                    <label for="firstname">First Name</label>
+                    <input type="firstname" class="js-query" value="" id="firstname" placeholder="first Name">
+                    <label for="lastname">Last Name</label>
+                    <input type="lastname" class="js-query" value="" id="lastname" placeholder="last Name">
+                    <button type="submit" class="js-reset-btn">Update</button>
+                </form>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="login hidden">
+            <div class="containerLogin">
+                <h2>Login</h2>
+                <form class='login-form' action="" method='post'>
+                    <label for="username">Username</label>
+                    <input type="text" class="js-query" id="email-login" placeholder="username">
+                    <label for="password">Password</label>
+
+                    <input type="password" class="js-query" value="" id="password-login" placeholder="password" required>
+                    <div class="boxchecked">
+                        <input type="checkbox" class="hidepassword" onclick="loginPassword()">
+                        <span class="passwordshow">Show Password</span>
+                    </div>
+                    <button type="submit" class="js-login-btn">Login</button>
+                    <p></p>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="search hidden">
+            <h2>Search any location. Make sure your budget will work for you!</h2>
+            <div class="container-search">
+                <h3>Find your food costs</h3>
+                <form class='search-form' action="" method='post'>
+                    <label for="desiredcity">Location</label>
+                    <input type="text" class="query-search" id="location" placeholder="Desired city" required>
+                    <label for="budget">Travel Budget</label>
+                    <input type="number" class="query-search" id="budget" placeholder="Budget (USD)" required>
+                    <label for="meals">Meals a day</label>
+                    <input type="number" class="query-search" id="meals" placeholder="Meals a day (eating out)" required>
+                    <label for="time">Length of stay</label>
+                    <input type="number" class="query-search" id="time" placeholder="Length of stay" required>
+                    <label for="unit">Unit</label>
+                    <select name="text" class="query-search" id="unit">
+                        <option value="Days">Days</option>
+                        <option value="Weeks" selected>Weeks</option>
+                    </select>
+                    <button type="submit" class="js-search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container-results hidden">
+            <p></p>
+            <label for="compare">Compare to another city!</label>
+            <input type="text" class="query-compare" id="compare" placeholder="Desired city" required>
+            <button type="submit" class="js-compare-btn">Compare</button>
+            <h3></h3>
+            <div class="wrapper">
+                <button class="confirm save">
+                    <span class="button-label">save</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="container-history hidden">
+            <p></p>
+        </div>
+
+        <div class="endpoint hidden">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="footer" class="footer">
+        <p>&copy Copyright 2018 Christopher Johnson</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

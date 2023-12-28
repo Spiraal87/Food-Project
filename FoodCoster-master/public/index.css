@@ -1,0 +1,636 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("food.jpg");
+  color: white;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.topnav {
+  background-color: #2e2e2d;
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+.topnav h1 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 2px;
+  font-family: "Oswald", sans-serif;
+}
+
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.topnav p {
+  float: right;
+  color: white;
+  font-size: 17px;
+  font-family: "Oswald", sans-serif;
+  margin-right: 30px;
+}
+
+.resetlink {
+  margin-top: 8px;
+  font-size: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+.title h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Oswald", sans-serif;
+}
+
+.signup h2 {
+  font-size: 30px;
+  margin-top: -100px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+.search h2 {
+  font-size: 30px;
+  margin-top: 110px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+.search h3 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 25px;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  background-color: #2e2e2d;
+  border: 1px solid white;
+  padding-bottom: 50px;
+  height: 550px;
+  max-width: 415px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 25px;
+  opacity: 0.85;
+}
+
+.boxchecked {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container h3 {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.container h4 {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+
+.container p {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.containerLogin {
+  background-color: #2e2e2d;
+  border: 1px solid white;
+
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 415px;
+  height: 375px;
+  margin: auto;
+  margin-top: 200px;
+  border-radius: 25px;
+  opacity: 0.85;
+}
+
+.containerLogin h2 {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-top: 25px;
+}
+
+.containerLogin h4 {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+
+.containerLogin p {
+  text-align: center;
+  color: #ff1a1a;
+}
+
+.hidepassword {
+  text-align: center;
+}
+
+.container-history p {
+  font-size: 20px;
+}
+
+.containerReset {
+  background-color: #2e2e2d;
+  border: 1px solid white;
+  padding-bottom: 50px;
+  max-width: 415px;
+  height: 360px;
+  margin: auto;
+  margin-top: 200px;
+  border-radius: 25px;
+  opacity: 0.85;
+}
+
+.containerReset h2 {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: -20px;
+}
+
+.containerReset p {
+  color: white;
+  text-align: center;
+}
+
+.js-query {
+  text-align: center;
+  height: 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: black;
+  margin-top: -10px;
+  display: block;
+  margin: auto;
+  padding: 15px;
+}
+
+button:hover {
+  background-color: #d8530c;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  border: none;
+  width: 100px;
+  height: 35px;
+  font-family: Open-sans;
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: white;
+  color: white;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  background: #ff8646;
+}
+
+label[for="firstname"],
+[for="password"],
+[for="lastname"] {
+  display: block;
+  text-align: center;
+  padding-top: 25px;
+}
+
+label[for="desiredcity"],
+[for="budget"],
+[for="meals"],
+[for="time"],
+[for="unit"] {
+  display: block;
+  text-align: center;
+}
+
+label[for="username"],
+[for="oldpassword"],
+[for="newpassword"] {
+  display: block;
+  text-align: center;
+  padding-top: 25px;
+}
+
+label[for="compare"] {
+  text-align: center;
+  padding-top: 25px;
+  margin: auto;
+  color: orange;
+}
+
+.save {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #1a91ca;
+}
+
+button.historyremove {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.container-search {
+  background-color: rgb(59, 57, 57);
+  border: 1px solid white;
+  padding-bottom: 50px;
+  width: 425px;
+  max-width: 100%;
+  height: 550px;
+  margin: auto;
+  margin-top: 75px;
+  border-radius: 25px;
+  opacity: 0.85;
+}
+
+.wrapper {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.cost {
+  color: orange;
+}
+
+.price {
+  color: lightblue;
+}
+
+.deficit {
+  color: red;
+}
+
+.surplus {
+  color: springgreen;
+}
+
+.query-search {
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.query-compare {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.container-results {
+  background-color: rgb(59, 57, 57);
+  display: block;
+  border: 1px solid white;
+  max-width: 100%;
+  width: 400px;
+  height: 490px;
+  margin: auto;
+  margin-top: 15px;
+  opacity: 0.85;
+  position: relative;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.endpoint {
+  background-color: rgb(59, 57, 57);
+  max-width: 415px;
+  height: 200px;
+  border-radius: 25px;
+  border: 1px solid white;
+  display: block;
+  text-align: center;
+  margin: auto;
+  opacity: 0.9;
+}
+
+.endpoint p {
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.container-results p {
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.searchwrap {
+  background-color: rgb(59, 57, 57);
+  display: block;
+  border: 1px solid white;
+
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 15px;
+  opacity: 0.85;
+  position: relative;
+  text-align: center;
+  border-radius: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+.saved {
+  border: 1px solid white;
+
+  width: 50px;
+  height: 15px;
+  float: right;
+}
+
+.landing h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.landing p {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 65px;
+}
+
+a.reset-link {
+  float: right;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.login-link:hover {
+  cursor: pointer;
+  color: #ff8646;
+}
+
+.reset-link:hover {
+  color: #ff8646;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #2e2e2d;
+  padding: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+a:hover {
+  color: #ff8646;
+}
+
+.containerbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  max-width: 415px;
+  margin: 0 auto;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #bf921f;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-position: right center;
+  cursor: pointer;
+}
+
+.btn-1 {
+  background-image: linear-gradient(
+    to right,
+    rgb(192, 21, 21) 0%,
+    #ff8646 51%,
+    rgb(192, 21, 21) 100%
+  );
+}
+.btn-2 {
+  background-image: linear-gradient(
+    to right,
+    rgb(192, 21, 21) 0%,
+    #ff8646 51%,
+    rgb(192, 21, 21) 100%
+  );
+}
+@media (min-width: 450px) {
+  .topnav {
+    overflow: hidden;
+    height: 55px;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 6px;
+    display: table-cell;
+    margin-bottom: 225px;
+  }
+  .container-history {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 450px) {
+  .logo {
+    margin-left: 160px;
+  }
+
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 2px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .topnav p {
+    float: right;
+    color: white;
+    font-size: 17px;
+    font-family: "Oswald", sans-serif;
+    margin-top: -95px;
+  }
+
+  .topnav {
+    background-color: #2e2e2d;
+    width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .container {
+    border-top: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    margin-top: 150px;
+    border-radius: 0px;
+  }
+
+  .containerLogin {
+    border-top: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    margin-top: 150px;
+    border-radius: 0px;
+  }
+
+  .container-search {
+    border-top: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    padding-bottom: 50px;
+    border-radius: 0px;
+  }
+
+  .container-results {
+    background-color: rgb(59, 57, 57);
+    border-top: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    margin-top: 150px;
+    border-radius: 0px;
+  }
+
+  .containerReset {
+    background-color: #2e2e2d;
+    border-top: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    margin-top: 200px;
+    border-radius: 0px;
+  }
+
+  .endpoint {
+    background-color: rgb(59, 57, 57);
+    border-top: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    margin-top: 150px;
+  }
+
+  .searchwrap {
+    background-color: rgb(59, 57, 57);
+    border-top: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    margin-top: 150px;
+  }
+
+  button.historyremove {
+    margin-right: 9px;
+    margin-bottom: 5px;
+    width: 70px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  .signup-form {
+    position: relative;
+  }
+}

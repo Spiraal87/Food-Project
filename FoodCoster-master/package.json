@@ -1,0 +1,34 @@
+{
+  "name": "travel-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --exit"
+  },
+  "author": "Chris Johnson <cjhawk7@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^2.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.17",
+    "morgan": "^1.9.0",
+    "npm": "^6.1.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "chai-http": "3.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4"
+  }
+}
